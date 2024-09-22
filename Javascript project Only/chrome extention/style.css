@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@400;500;600&display=swap');
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family:'Poppins',sans-serif ;
+}
+body {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+}
+.popup{
+ width: 350px;
+}
+.popup :where(.picker,header ,.all-color , .color){
+ display: flex;
+ align-items: center;
+}
+.popup .picker {
+ padding: 30px 0;
+ display: flex;
+ justify-content: center;
+ background: #e3f2fd;
+}
+.picker #color-picker {
+ outline: none;
+ border: none;
+ background: #5372f0;
+ color: #fff;
+ cursor: pointer;
+ padding: 10px 20px;
+ font-size: 1rem;
+ border-radius: 5px;
+}
+.picked-colors {
+ margin: 10px 15px;
+}
+
+.picked-colors.hide {
+ display: none;
+}
+.picked-colors header {
+ justify-content: space-between;
+}
+.picked-colors .clear-all {
+ color: #5372f0;
+ cursor: pointer;
+ font-size: 0.9rem;
+}
+
+
+.all-color {
+ margin: 10px 0;
+ flex-wrap: wrap;
+}
+.all-color .color {
+cursor: pointer;
+margin-bottom: 10px;
+width: calc(100% / 3);
+}
+.all-color .color .react {
+ display: block;
+ height: 22px;
+ width: 22px;
+ margin-right: 8px;
+ border-radius: 5px;
+ /* background: #5372f0; */
+}
+ .all-color .color .value {
+  font-size: 0.96rem;
+  font-weight: 500;
+  text-transform: uppercase;
+ }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Password Generator</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+  <h1>Password Generator</h1>
+  <div class="input-box">
+   <input type="text" disabled class="pass-box">
+   <div id="copy">
+     <i class="fa-regular fa-clone" title="copy"></i>
+   </div>
+  </div>
+  <input type="range" min="1" max="30" value="8" class="range">
+
+  <div class="row">
+   <p>Password Length</p>
+   <span class="rangevalue">0</span>
+  </div>
+  <div class="row">
+   <input type="checkbox" name="lowercase" class="lowercase" checked>
+    <label for="lowercase">Include Lowercase Latters (a-z)</label>
+  </div>
+  <div class="row">
+    <input type="checkbox" name="Uppercase" class="uppercase" checked>
+    <label for="Uppercase">Include Uppercase Latters (A-z)</label>
+  </div>
+  <div class="row">
+    <input type="checkbox" name="Numbers" class="number" checked>
+    <label for="Numbers">Include Numbers Latters (0-9)</label>
+  </div>
+  <div class="row">
+    <input type="checkbox" name="Symbols" class="symbols" checked>
+    <label for="Symbols">Include Symbols Latters (@-*)</label>
+  </div>
+
+  <button class="genbtn">Generate Password</button>
+
+ </div>
+ <script src="script.js">
+ 
+ </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+ display: flex
+;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+background: #595DB8;
+}
+.sortable-list {
+ width: 425px;
+ padding: 25px;
+ background: #fff;
+ box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sortable-list .item {
+ list-style: none;
+ border: 1px  solid #ccc;
+ margin-bottom: 11px;
+display: flex;
+align-items: center;
+justify-content:space-between;
+padding: 10px 13px;
+border-radius: 5px;
+background: #fff;
+/* cursor: move; */
+}
+.item .details {
+ display: flex;
+ align-items: center;
+ cursor: move;
+}
+.sortable-list .item .details img {
+ width: 43px;
+ height: 43px;
+ pointer-events: none;
+ object-fit: cover;
+ border-radius: 50%;
+}
+span {
+ margin-left: 10px;
+}
+i{
+ cursor: pointer;
+}
+.item.dragging {
+ opacity: 0.6;
+}
+.item.dragging :where(.details, i) {
+ opacity: 0;
+}
